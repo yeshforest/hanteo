@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+* {
+  font-family: "Pretendard Variable", Pretendard, "Bebas Neue";
+}
+
+html {
+  // @include horizontal-scroll;
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  // height: 100vh;
+}
