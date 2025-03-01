@@ -1,16 +1,21 @@
 @use "../abstracts/" as *;
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
-* {
-  font-family: "Pretendard Variable", Pretendard, "Bebas Neue";
-}
+@layer Typography {
+  *,
+  *::before,
+  *::after {
+    font-family: "Pretendard", sans-serif;
+  }
 
-html {
-  // @include horizontal-scroll;
-  font-size: 62.5%;
-}
-
-body {
-  overflow-x: hidden;
-  box-sizing: border-box;
+  html {
+    font-size: 62.5%; // 1rem -> 10px로 사용하기 위함
+  }
+  body {
+    font-size: 1.6rem;
+    color: $font-black;
+    line-height: 1.5;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
 }

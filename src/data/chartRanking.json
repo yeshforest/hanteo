@@ -1,0 +1,64 @@
+{
+  "musicChartRanking": [
+    {
+      "title": "TOO BAD",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=1"
+    },
+    {
+      "title": "HOME SWEET HOME",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=2"
+    },
+    {
+      "title": "REBEL HEART",
+      "artist": ["IVE"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=3"
+    },
+    {
+      "title": "나는 반딧불",
+      "artist": ["황가람"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=4"
+    },
+    {
+      "title": "Whiplash",
+      "artist": ["에스파"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=5"
+    },
+    {
+      "title": "모르시나요(PROD.로코베리)",
+      "artist": ["Jo Jazz"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=6"
+    },
+    {
+      "title": "Drowning",
+      "artist": ["WOODZ"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=7"
+    },
+    {
+      "title": "TAKE ME",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=8"
+    },
+    {
+      "title": "ATTITUDE",
+      "artist": ["IVE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=9"
+    },
+    {
+      "title": "APT.",
+      "artist": ["ROSE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=10"
+    }
+  ]
+}
