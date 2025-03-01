@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+.header-nav-item__button {
+  font-size: 1.8rem;
+  color: $font-black;
+  padding: 1.2rem 1.6rem;
+  font-weight: 600;
+  &--active {
+    font-size: 1.8rem;
+    padding: 1.2rem 1.6rem;
+    font-weight: 600;
+    color: white;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}

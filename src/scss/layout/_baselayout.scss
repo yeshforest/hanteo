@@ -17,9 +17,10 @@ $web-width: 1024px;
 
 .root__container {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   max-width: $mobile-width;
-  // margin: 0 auto;
-  padding: 0 1rem;
 
   @include tablet {
     max-width: $tablet-width;
@@ -30,4 +31,8 @@ $web-width: 1024px;
     max-width: $web-width;
     padding: 0 3rem;
   }
+}
+
+.main__container {
+  flex: 1;
 }

@@ -1,0 +1,8 @@
+.header-nav {
+  background-color: #ffb1b2;
+  &-list__container {
+    display: flex;
+    justify-content: space-between;
+    // margin-inline: auto;
+  }
+}
