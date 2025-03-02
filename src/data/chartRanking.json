@@ -59,6 +59,546 @@
       "artist": ["ROSE"],
       "rankChange": "UNCHANGED",
       "albumCoverUrl": "https://picsum.photos/62/62?random=10"
+    },
+    {
+      "title": "POWER",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=11"
+    },
+    {
+      "title": "GYRO-DROP",
+      "artist": ["G-DRAGON"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=12"
+    },
+    {
+      "title": "IBELONGIIU",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=13"
+    },
+    {
+      "title": "DRAMA",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=14"
+    },
+    {
+      "title": "보나마나",
+      "artist": ["G-DRAGON"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=15"
+    },
+    {
+      "title": "무제(無題)",
+      "artist": ["G-DRAGON"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=16"
+    },
+    {
+      "title": "Hype Boy",
+      "artist": ["NewJeans"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=17"
+    },
+    {
+      "title": "Super Shy",
+      "artist": ["NewJeans"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=18"
+    },
+    {
+      "title": "Ditto",
+      "artist": ["NewJeans"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=19"
+    },
+    {
+      "title": "Attention",
+      "artist": ["NewJeans"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=20"
+    },
+    {
+      "title": "ETA",
+      "artist": ["NewJeans"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=21"
+    },
+    {
+      "title": "Bubble Gum",
+      "artist": ["NewJeans"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=22"
+    },
+    {
+      "title": "Supernatural",
+      "artist": ["NewJeans"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=23"
+    },
+    {
+      "title": "How Sweet",
+      "artist": ["NewJeans"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=24"
+    },
+    {
+      "title": "LOVE DIVE",
+      "artist": ["IVE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=25"
+    },
+    {
+      "title": "After LIKE",
+      "artist": ["IVE"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=26"
+    },
+    {
+      "title": "I AM",
+      "artist": ["IVE"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=27"
+    },
+    {
+      "title": "해야 (HEYA)",
+      "artist": ["IVE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=28"
+    },
+    {
+      "title": "Armageddon",
+      "artist": ["aespa"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=29"
+    },
+    {
+      "title": "Supernova",
+      "artist": ["aespa"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=30"
+    },
+    {
+      "title": "Live My Life",
+      "artist": ["aespa"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=31"
+    },
+    {
+      "title": "UP",
+      "artist": ["KARINA"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=32"
+    },
+    {
+      "title": "toxic till the end",
+      "artist": ["ROSE"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=33"
+    },
+    {
+      "title": "number one girl",
+      "artist": ["ROSE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=34"
+    },
+    {
+      "title": "earthquake",
+      "artist": ["JISOO"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=35"
+    },
+    {
+      "title": "Die With A Smile",
+      "artist": ["Lady GaGa", "Bruno Mars"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=36"
+    },
+    {
+      "title": "Mantra",
+      "artist": ["JENNIE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=37"
+    },
+    {
+      "title": "ExtraL",
+      "artist": ["JENNIE", "Doechii"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=38"
+    },
+    {
+      "title": "Love Hangover",
+      "artist": ["JENNIE", "Dominic Fike"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=39"
+    },
+    {
+      "title": "SPOT!",
+      "artist": ["ZICO", "JENNIE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=40"
+    },
+    {
+      "title": "DRIP",
+      "artist": ["BABYMONSTER"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=41"
+    },
+    {
+      "title": "Not Like Us",
+      "artist": ["Kendrick Lamar"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=42"
+    },
+    {
+      "title": "luther",
+      "artist": ["Kendrick Lamar"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=43"
+    },
+    {
+      "title": "고민중독",
+      "artist": ["QWER"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=44"
+    },
+    {
+      "title": "내 이름 맑음",
+      "artist": ["QWER"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=45"
+    },
+    {
+      "title": "The Chase",
+      "artist": ["Hearts2Hearts"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=46"
+    },
+    {
+      "title": "HAPPY",
+      "artist": ["DAY6"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=47"
+    },
+    {
+      "title": "Welcome to the Show",
+      "artist": ["DAY6"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=48"
+    },
+    {
+      "title": "녹아내려요",
+      "artist": ["DAY6"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=49"
+    },
+    {
+      "title": "한 페이지가 될 수 있게",
+      "artist": ["DAY6"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=50"
+    },
+    {
+      "title": "Love me or Leave me",
+      "artist": ["DAY6"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=51"
+    },
+    {
+      "title": "예뻤어",
+      "artist": ["DAY6"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=52"
+    },
+    {
+      "title": "Congratulations",
+      "artist": ["DAY6"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=53"
+    },
+    {
+      "title": "아직 거기 살아",
+      "artist": ["DAY6"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=54"
+    },
+    {
+      "title": "나는 아픈 건 딱 질색이니까",
+      "artist": ["(여자)아이들"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=55"
+    },
+    {
+      "title": "클락션 (Klaxon)",
+      "artist": ["(여자)아이들"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=56"
+    },
+    {
+      "title": "Magnetic",
+      "artist": ["ILLIT"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=57"
+    },
+    {
+      "title": "Cherish (My Love)",
+      "artist": ["ILLIT"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=58"
+    },
+    {
+      "title": "첫 만남은 계획대로 되지 않아",
+      "artist": ["TWS"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=59"
+    },
+    {
+      "title": "Dash",
+      "artist": ["PLAVE"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=60"
+    },
+    {
+      "title": "Hug (포옹)",
+      "artist": ["RIIZE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=61"
+    },
+    {
+      "title": "Boom Boom Bass",
+      "artist": ["RIIZE"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=62"
+    },
+    {
+      "title": "Igloo",
+      "artist": ["KISS OF LIFE"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=63"
+    },
+    {
+      "title": "Sticky",
+      "artist": ["KISS OF LIFE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=64"
+    },
+    {
+      "title": "Love wins all",
+      "artist": ["IU"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=65"
+    },
+    {
+      "title": "Supersonic",
+      "artist": ["프로미스나인"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=66"
+    },
+    {
+      "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지",
+      "artist": ["AKMU"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=67"
+    },
+    {
+      "title": "청혼하지 않을 이유를 못 찾았어",
+      "artist": ["이무진"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=68"
+    },
+    {
+      "title": "에피소드",
+      "artist": ["이무진"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=69"
+    },
+    {
+      "title": "청춘만화",
+      "artist": ["이무진"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=70"
+    },
+    {
+      "title": "미치게 그리워서",
+      "artist": ["황가람"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=71"
+    },
+    {
+      "title": "슬픈 초대장",
+      "artist": ["순순희"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=72"
+    },
+    {
+      "title": "Small girl",
+      "artist": ["이영지", "D.O."],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=73"
+    },
+    {
+      "title": "봄여름가을겨울 (Still Life)",
+      "artist": ["BIGBANG"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=74"
+    },
+    {
+      "title": "Letter To Myself",
+      "artist": ["TAEYEON"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=75"
+    },
+    {
+      "title": "To. X",
+      "artist": ["TAEYEON"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=76"
+    },
+    {
+      "title": "주저하는 연인들을 위해",
+      "artist": ["잔나비"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=77"
+    },
+    {
+      "title": "우리의 다정한 계절 속에",
+      "artist": ["GFRIEND"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=78"
+    },
+    {
+      "title": "헤어지자 말해요",
+      "artist": ["박재정"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=79"
+    },
+    {
+      "title": "모든 날, 모든 순간",
+      "artist": ["폴킴"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=80"
+    },
+    {
+      "title": "너의 모든 순간",
+      "artist": ["성시경"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=81"
+    },
+    {
+      "title": "Cruel Summer",
+      "artist": ["Taylor Swift"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=82"
+    },
+    {
+      "title": "비의 랩소디",
+      "artist": ["임재현"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=83"
+    },
+    {
+      "title": "숲",
+      "artist": ["최유리"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=84"
+    },
+    {
+      "title": "인사",
+      "artist": ["범진"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=85"
+    },
+    {
+      "title": "사랑은 늘 도망가",
+      "artist": ["임영웅"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=86"
+    },
+    {
+      "title": "청바지",
+      "artist": ["부석순"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=87"
+    },
+    {
+      "title": "사건의 지평선",
+      "artist": ["윤하"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=88"
+    },
+    {
+      "title": "미안해 미워해 사랑해",
+      "artist": ["Crush"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=89"
+    },
+    {
+      "title": "내게 사랑이 뭐냐고 물어본다면",
+      "artist": ["로이킴"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=90"
+    },
+    {
+      "title": "밤양갱",
+      "artist": ["BIBI"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=91"
+    },
+    {
+      "title": "네모네모",
+      "artist": ["YENA"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=92"
+    },
+    {
+      "title": "그대만 있다면",
+      "artist": ["너드커넥션"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=93"
+    },
+    {
+      "title": "소나기",
+      "artist": ["이클립스"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=94"
+    },
+    {
+      "title": "천상연",
+      "artist": ["이창섭"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=95"
+    },
+    {
+      "title": "너와의 모든 지금",
+      "artist": ["재쓰비"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=96"
+    },
+    {
+      "title": "LOVE ATTACK",
+      "artist": ["RESCENE"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=97"
+    },
+    {
+      "title": "SCENE BY SCENE",
+      "artist": ["RESCENE"],
+      "rankChange": "UP",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=98"
+    },
+    {
+      "title": "열이올라요",
+      "artist": ["세븐틴"],
+      "rankChange": "DOWN",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=99"
+    },
+    {
+      "title": "Super",
+      "artist": ["세븐틴"],
+      "rankChange": "UNCHANGED",
+      "albumCoverUrl": "https://picsum.photos/62/62?random=100"
     }
   ]
 }
