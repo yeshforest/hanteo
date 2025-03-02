@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 .header-nav {
-  background-color: $secondary;
+  background-color: black;
   &-list__container {
     display: flex;
     justify-content: space-between;

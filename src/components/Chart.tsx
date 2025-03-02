@@ -1,27 +1,17 @@
-import { musicChartRanking } from "../data/chartRanking";
+import { musicChartRanking } from "../data/ChartRanking";
 import { RankTrend } from "../types/ChartRankingType";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Banner from "./Banner";
+
 export const Chart = () => {
   return (
     <section className="chart__container">
       <h2 className="a11y-hidden">차트 페이지</h2>
-      {/* 배너 */}
-      <Swiper
-        spaceBetween={0}
-        slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
+      <Banner />
       <article className="chart">
         <h3 className="chart__title">Real-time Hanteo Chart</h3>
         <ol className="chart-list">
           {musicChartRanking.map((music, index) => (
-            <li className="chart__item">
+            <li className="chart__item" key={index}>
               <img src={music.albumCoverUrl} />
               <span className="chart__item-content">
                 <div className="chart__rank-container">
