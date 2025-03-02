@@ -43,7 +43,6 @@ function App() {
             );
           })}
         </Swiper>
-        {/* <TabContentLayout activeTabId={activeTabId}></TabContentLayout> */}
       </main>
       <footer></footer>
     </div>

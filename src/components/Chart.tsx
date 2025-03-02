@@ -37,6 +37,7 @@ export const Chart = () => {
 
   return (
     <section className="chart__container">
+      {isLoading && <div className="chart-loading-spinner"></div>}
       <h2 className="a11y-hidden">차트 페이지</h2>
       <Banner />
       <article className="chart">
