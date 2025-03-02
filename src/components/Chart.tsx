@@ -1,8 +1,40 @@
-import { musicChartRanking } from "../data/ChartRanking";
-import { RankTrend } from "../types/ChartRankingType";
+import { useEffect, useState } from "react";
+import { ChartRankingType, RankTrend } from "../types/ChartRankingType";
 import Banner from "./Banner";
+import { fetchChartRankingPaging } from "../api/api";
+import useInfinityScroll from "../hooks/useInfinityScroll";
 
 export const Chart = () => {
+  const [musicChartRanking, setMusicChartRanking] = useState<
+    ChartRankingType[]
+  >([]);
+  const [page, setPage] = useState<number>(1);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isLastPage, setIsLastPage] = useState<boolean>(false);
+
+  const loadMoreItems = async () => {
+    if (isLoading) return;
+    setIsLoading(true);
+    try {
+      const result = await fetchChartRankingPaging(page);
+      if (result) {
+        setMusicChartRanking((prev) => [...prev, ...result.items]);
+        setIsLastPage(!result.hasMore);
+        setPage((prev) => prev + 1);
+      }
+    } catch (error) {
+      console.error("Failed to load music chart:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadMoreItems();
+  }, []);
+
+  const { loaderRef } = useInfinityScroll(loadMoreItems, isLoading, isLastPage);
+
   return (
     <section className="chart__container">
       <h2 className="a11y-hidden">차트 페이지</h2>
@@ -33,6 +65,7 @@ export const Chart = () => {
           ))}
         </ol>
       </article>
+      <div ref={loaderRef} className="loader-element" />
     </section>
   );
 };
