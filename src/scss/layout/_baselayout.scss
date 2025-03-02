@@ -1,19 +1,5 @@
-// 브레이크포인트 변수
+// 모바일 브레이크포인트
 $mobile-width: 425px;
-$tablet-width: 768px;
-$web-width: 1024px;
-
-// 간단한 미디어 쿼리 믹스인
-@mixin tablet {
-  @media (min-width: $tablet-width) {
-    @content;
-  }
-}
-@mixin web {
-  @media (min-width: $web-width) {
-    @content;
-  }
-}
 
 .root__container {
   width: 100%;
@@ -21,16 +7,7 @@ $web-width: 1024px;
   display: flex;
   flex-direction: column;
   max-width: $mobile-width;
-
-  @include tablet {
-    max-width: $tablet-width;
-    padding: 0 2rem;
-  }
-
-  @include web {
-    max-width: $web-width;
-    padding: 0 3rem;
-  }
+  margin: 0 auto;
 }
 
 .main__container {
