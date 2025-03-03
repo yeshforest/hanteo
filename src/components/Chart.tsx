@@ -57,7 +57,9 @@ export const Chart = () => {
         <ol className="chart-list">
           {musicChartRanking.map((music, index) => (
             <li className="chart__item" key={index}>
-              <img src={music.albumCoverUrl} />
+              <div className="chart__img-wrapper">
+                <img src={music.albumCoverUrl} />
+              </div>
               <span className="chart__item-content">
                 <div className="chart__rank-container">
                   <div className="chart__rank">{index + 1}</div>

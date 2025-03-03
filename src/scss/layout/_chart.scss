@@ -28,14 +28,20 @@
   display: flex;
   gap: 1.6rem;
   width: 100%;
-  img {
-    width: 6.2rem;
-    height: 6.2rem;
-    border-radius: 0.6rem;
-  }
+
   &-content {
     display: flex;
     gap: 1.2rem;
+  }
+}
+.chart__img-wrapper {
+  width: 6.2rem;
+  height: 6.2rem;
+  background-color: $bg-white;
+
+  img {
+    object-fit: cover;
+    border-radius: 0.6rem;
   }
 }
 
