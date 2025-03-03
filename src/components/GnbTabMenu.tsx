@@ -1,5 +1,10 @@
 import { GNBs } from "../data/Gnbs";
 import { SwiperClass } from "swiper/react";
+/* 
+  헤더의 GNB 탭 메뉴 컴포넌트 
+  주기능: 카테고리 이동기능 
+*/
+
 interface Props {
   swiper: SwiperClass;
   activeTabIndex: number;

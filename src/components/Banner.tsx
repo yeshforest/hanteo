@@ -3,9 +3,14 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 import { fetchMainBanners } from "../api/api";
 import { MainBannerType } from "../types/MainBannerType";
+/* 
+  차트 카테고리의 메인 배너
+  주기능: 슬라이드형태로 배너 내용 표시, 무한루프 및 외부 링크이동
+*/
 const Banner = () => {
   const [mainBanners, setMainBanners] = useState<MainBannerType[]>([]);
   useEffect(() => {
+    // 배너 데이터 fetch
     fetchMainBanners().then((data) => {
       setMainBanners(data);
     });

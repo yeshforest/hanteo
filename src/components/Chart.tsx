@@ -3,24 +3,30 @@ import { ChartRankingType, RankTrend } from "../types/ChartRankingType";
 import Banner from "./Banner";
 import { fetchChartRankingPaging } from "../api/api";
 import useInfinityScroll from "../hooks/useInfinityScroll";
-
+/* 
+  차트 카테고리의 콘텐츠 컴포넌트
+  주기능: 차트 카테고리의 내용을 표시
+*/
 export const Chart = () => {
   const [musicChartRanking, setMusicChartRanking] = useState<
     ChartRankingType[]
   >([]);
-  const [page, setPage] = useState<number>(1);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [isLastPage, setIsLastPage] = useState<boolean>(false);
 
-  const loadMoreItems = async () => {
-    if (isLoading) return;
+  // 무한 스크롤 구현 시 사용되는 변수 정의
+  const [page, setPage] = useState<number>(1); // 현재 페이지
+  const [isLoading, setIsLoading] = useState<boolean>(false); // 로딩중인지 확인하는 변수
+  const [isLastPage, setIsLastPage] = useState<boolean>(false); // 더 불러올 데이터가 있는지 확인하는 변수
+
+  // 무한스크롤로 가져오기
+  const fetchMoreItems = async () => {
+    if (isLoading) return; // 로딩중이면 종료
     setIsLoading(true);
     try {
-      const result = await fetchChartRankingPaging(page);
+      const result = await fetchChartRankingPaging(page); // 현재페이지를 기준으로 데이터 fetch
       if (result) {
-        setMusicChartRanking((prev) => [...prev, ...result.items]);
-        setIsLastPage(!result.hasMore);
-        setPage((prev) => prev + 1);
+        setMusicChartRanking((prev) => [...prev, ...result.items]); // 가져온 데이터를 기존의 데이터와 합침
+        setIsLastPage(!result.hasMore); // 데이터가 더 있는지 여부 저장
+        setPage((prev) => prev + 1); // 페이지 증가
       }
     } catch (error) {
       console.error("Failed to load music chart:", error);
@@ -30,10 +36,16 @@ export const Chart = () => {
   };
 
   useEffect(() => {
-    loadMoreItems();
+    // 처음 페이지 마운트 시 데이터 가져오기
+    fetchMoreItems();
   }, []);
 
-  const { loaderRef } = useInfinityScroll(loadMoreItems, isLoading, isLastPage);
+  // 무한스크롤 hook : 리턴받은 ref를 최하단 element(관찰대상)에 할당
+  const { loaderRef } = useInfinityScroll(
+    fetchMoreItems,
+    isLoading,
+    isLastPage
+  );
 
   return (
     <section className="chart__container">
