@@ -20,37 +20,39 @@ const GnbTabMenu = ({ swiper, activeTabIndex, setActiveTabIndex }: Props) => {
     setActiveTabIndex(index);
   };
   return (
-    <nav className="gnb-tab">
-      <ul
-        className="gnb-tab__list"
-        ref={scrollRef}
-        onMouseDown={onMouseDown}
-        onMouseMove={isDrag ? onDragMove : undefined}
-        onMouseUp={onMouseUp}
-        onMouseLeave={onMouseUp}
-      >
-        {GNBs.map((gnbItems, itemIndex) => {
-          const buttonClassName =
-            activeTabIndex === gnbItems.id
-              ? "gnb-tab__button gnb-tab__button--active"
-              : "gnb-tab__button";
+    <div className="gnb-tab__container">
+      <nav className="gnb-tab">
+        <ul
+          className="gnb-tab__list"
+          ref={scrollRef}
+          onMouseDown={onMouseDown}
+          onMouseMove={isDrag ? onDragMove : undefined}
+          onMouseUp={onMouseUp}
+          onMouseLeave={onMouseUp}
+        >
+          {GNBs.map((gnbItems, itemIndex) => {
+            const buttonClassName =
+              activeTabIndex === gnbItems.id
+                ? "gnb-tab__button gnb-tab__button--active"
+                : "gnb-tab__button";
 
-          return (
-            <li key={gnbItems.id} className="gnb-tab__item">
-              <button
-                id={gnbItems.id.toString()}
-                className={buttonClassName}
-                onClick={() => {
-                  handleGnbItemClick(itemIndex);
-                }}
-              >
-                {gnbItems.title}
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+            return (
+              <li key={gnbItems.id} className="gnb-tab__item">
+                <button
+                  id={gnbItems.id.toString()}
+                  className={buttonClassName}
+                  onClick={() => {
+                    handleGnbItemClick(itemIndex);
+                  }}
+                >
+                  {gnbItems.title}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </div>
   );
 };
 export default GnbTabMenu;

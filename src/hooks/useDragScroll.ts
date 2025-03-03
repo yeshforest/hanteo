@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // 드래그로 스크롤을 할 수 있도록 하는 custom hook
 const useDragScroll = () => {
-  const scrollRef = useRef<HTMLElement | null>(null); // 스크롤할 요소에 대한 참조 선언
+  const scrollRef = useRef<HTMLUListElement | HTMLOListElement | null>(null); // 스크롤할 요소에 대한 참조 선언
   const [isDrag, setIsDrag] = useState<boolean>(false);
   const [start, setStart] = useState<number>(0); // 드래그 시작 위치
 

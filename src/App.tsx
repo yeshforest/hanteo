@@ -16,12 +16,9 @@ function App() {
           setActiveTabIndex={setActiveTabIndex}
         />
       )}
-      <main className="main__container">
-        <TabContent
-          setSwiper={setSwiper}
-          setActiveTabIndex={setActiveTabIndex}
-        />
-      </main>
+
+      <TabContent setSwiper={setSwiper} setActiveTabIndex={setActiveTabIndex} />
+
       <footer></footer>
     </div>
   );

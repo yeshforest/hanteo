@@ -19,6 +19,7 @@ const TabContent = ({ setSwiper, setActiveTabIndex }: Props) => {
         onSwiper={setSwiper}
         onSlideChange={(e) => {
           setActiveTabIndex(e.activeIndex);
+          window.scrollTo(0, 0);
         }}
       >
         {GNBs.map((gnbItem) => {

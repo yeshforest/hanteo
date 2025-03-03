@@ -1,18 +1,22 @@
 @use "../abstracts/" as *;
 
 /* gnb 스타일 */
+.gnb-tab__container {
+  position: fixed;
+  z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
+}
 .gnb-tab {
   background-color: $bg-gnb;
+  position: relative;
+  top: 0; /* 상단에 위치 */
+  left: 0; /* 왼쪽 모서리에 위치 */
+  width: $mobile-width; /* 전체 너비 사용 */
 
   &__list {
     display: flex;
     justify-content: space-between;
     overflow-x: auto;
-    // 스크롤바 없애기 위한 코드
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    @include hidden-scrollbar;
   }
 
   &__item {

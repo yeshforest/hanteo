@@ -19,5 +19,7 @@
     overflow-x: hidden;
     box-sizing: border-box;
     background-color: $bg-gray; /* 전체 배경색 */
+
+    @include hidden-scrollbar;
   }
 }
