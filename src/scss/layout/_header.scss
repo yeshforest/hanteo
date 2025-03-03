@@ -1,9 +1,5 @@
 @use "../abstracts/" as *;
-.header-nav {
-  background-color: black;
-  &-list__container {
-    display: flex;
-    justify-content: space-between;
-    // margin-inline: auto;
-  }
+/* 헤더 스타일 */
+.header__title {
+  @include a11y-hidden;
 }

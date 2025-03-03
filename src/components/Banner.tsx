@@ -16,14 +16,12 @@ const Banner = () => {
     });
   }, []);
   return (
-    <section>
+    <section className="banner">
       <Swiper
-        className="chart__banner-swiper"
+        className="banner__swiper"
         spaceBetween={0}
         slidesPerView={1.1}
         centeredSlides={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         loop={true}
@@ -34,23 +32,21 @@ const Banner = () => {
       >
         {mainBanners.map((banner, index) => (
           <SwiperSlide key={index}>
-            <a href="#" className="chart__banner">
-              <div className="img-wrapper">
+            <a href="#" className="banner__item">
+              <div className="banner__img-wrapper">
                 <img src={banner.bannerImgUrl} />
               </div>
-              <div className="chart__banner-detail">
-                <span className="chart__banner-content">
-                  <div className="chart__banner-title">{banner.title}</div>
+              <div className="banner__details">
+                <span className="banner__content">
+                  <div className="banner__title">{banner.title}</div>
                   {banner.actionTitle && (
-                    <button className="chart__banner-action">
+                    <button className="banner__action">
                       {banner.actionTitle}
                     </button>
                   )}
                 </span>
                 {banner.duration && (
-                  <div className="chart__banner-duration">
-                    {banner.duration}
-                  </div>
+                  <div className="banner__duration">{banner.duration}</div>
                 )}
               </div>
             </a>

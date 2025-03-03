@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
+// reset 코드보다 나중에 적용되도록 레이어 지정 -> 지정한 스타일이 리셋되지 않도록 하기 위함
 @layer Typography {
   *,
   *::before,

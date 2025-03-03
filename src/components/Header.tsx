@@ -12,7 +12,7 @@ interface Props {
 const Header = ({ swiper, activeTabIndex, setActiveTabIndex }: Props) => {
   return (
     <header className="header__container">
-      <h1 className="a11y-hidden">헌터차트</h1>
+      <h1 className="header__title">헌터차트</h1>
       <GnbTabMenu
         swiper={swiper!}
         activeTabIndex={activeTabIndex}

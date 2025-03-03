@@ -16,13 +16,13 @@ const GnbTabMenu = ({ swiper, activeTabIndex, setActiveTabIndex }: Props) => {
     setActiveTabIndex(index);
   };
   return (
-    <nav className="header-nav">
-      <ul className="header-nav-list__container">
+    <nav className="gnb-tab">
+      <ul className="gnb-tab__list">
         {GNBs.map((gnbItems, itemIndex) => {
           const buttonClassName =
             activeTabIndex === gnbItems.id
-              ? "header-nav-item__button--active"
-              : "header-nav-item__button";
+              ? "gnb-tab__button gnb-tab__button--active"
+              : "gnb-tab__button";
 
           return (
             <li key={gnbItems.id}>

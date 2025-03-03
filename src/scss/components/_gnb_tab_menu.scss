@@ -1,0 +1,9 @@
+/* gnb 스타일 */
+.gnb-tab {
+  background-color: black;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

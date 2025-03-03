@@ -1,0 +1,66 @@
+@use "../abstracts/" as *;
+/* 배너 스타일 */
+.banner__swiper {
+  padding-bottom: 2.4rem;
+}
+
+.banner__img-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 13.8rem;
+  background-color: #f1f1f1;
+
+  img {
+    width: 100%;
+
+    object-fit: contain;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+}
+
+.banner__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 2px 0.15rem #eeeeee;
+  height: 20rem;
+  margin: 0.8rem;
+}
+
+.banner__details {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem;
+  gap: 0.6rem;
+}
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__title {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner__action {
+  border: 0.15rem solid $primary;
+  border-radius: 5rem;
+  color: $primary;
+  padding: 0.4rem 0.8rem;
+  white-space: nowrap;
+  height: min-content;
+  font-size: 1.2rem;
+}
+
+.banner__duration {
+  text-align: end;
+  font-size: 1.2rem;
+  font-weight: 400;
+}

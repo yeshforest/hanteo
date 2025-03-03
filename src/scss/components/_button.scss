@@ -1,26 +1,12 @@
 @use "../abstracts/" as *;
-.header-nav-item__button {
+/* 버튼의 스타일 */
+.gnb-tab__button {
   font-size: 1.6rem;
   color: #fffefe;
   padding: 1.2rem 1.6rem;
   font-weight: 600;
+
   &--active {
-    font-size: 1.6rem;
-    padding: 1.2rem 1.6rem;
-    font-weight: 600;
     color: $secondary;
   }
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-wrapper .swiper-slide {
-  width: 100%;
-  height: 100%;
 }
