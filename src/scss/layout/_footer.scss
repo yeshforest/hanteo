@@ -1,1 +1,8 @@
-// TODO: 구현 예정
+@use "../abstracts/" as *;
+.footer {
+  margin-top: 1.6rem;
+  padding: 2.4rem 1.2rem;
+  font-size: 1rem;
+  color: $font-white;
+  background-color: $bg-footer-black;
+}

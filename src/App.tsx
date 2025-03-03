@@ -3,6 +3,7 @@ import { SwiperClass } from "swiper/react";
 import { useState } from "react";
 import Header from "./components/Header";
 import TabContent from "./components/TabContent";
+import Footer from "./components/Footer";
 function App() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [swiper, setSwiper] = useState<SwiperClass>();
@@ -18,8 +19,7 @@ function App() {
       )}
 
       <TabContent setSwiper={setSwiper} setActiveTabIndex={setActiveTabIndex} />
-
-      <footer></footer>
+      <Footer />
     </div>
   );
 }
