@@ -7,5 +7,15 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    overflow-x: auto;
+    // 스크롤바 없애기 위한 코드
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    white-space: nowrap;
   }
 }
