@@ -3,6 +3,8 @@ import { ChartRankingType, RankTrend } from "../types/ChartRankingType";
 import Banner from "./Banner";
 import { fetchChartRankingPaging } from "../api/api";
 import useInfinityScroll from "../hooks/useInfinityScroll";
+import defaultImg from "../../public/img_default.png";
+import { SyntheticEvent } from "react";
 /* 
   차트 카테고리의 콘텐츠 컴포넌트
   주기능: 차트 카테고리의 내용을 표시
@@ -58,7 +60,12 @@ export const Chart = () => {
           {musicChartRanking.map((music, index) => (
             <li className="chart__item" key={index}>
               <div className="chart__img-wrapper">
-                <img src={music.albumCoverUrl} />
+                <img
+                  src={music.albumCoverUrl}
+                  onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
+                    e.currentTarget.src = defaultImg;
+                  }}
+                />
               </div>
               <span className="chart__item-content">
                 <div className="chart__rank-container">

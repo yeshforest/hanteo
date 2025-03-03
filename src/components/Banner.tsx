@@ -3,6 +3,8 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 import { fetchMainBanners } from "../api/api";
 import { MainBannerType } from "../types/MainBannerType";
+import { SyntheticEvent } from "react";
+import defaultImg from "../../public/img_default.png";
 /* 
   차트 카테고리의 메인 배너
   주기능: 슬라이드형태로 배너 내용 표시, 무한루프 및 외부 링크이동
@@ -34,7 +36,12 @@ const Banner = () => {
           <SwiperSlide key={index}>
             <a href="#" className="banner__item">
               <div className="banner__img-wrapper">
-                <img src={banner.bannerImgUrl} />
+                <img
+                  src={banner.bannerImgUrl}
+                  onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
+                    e.currentTarget.src = defaultImg;
+                  }}
+                />
               </div>
               <div className="banner__details">
                 <span className="banner__content">

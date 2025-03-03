@@ -40,7 +40,7 @@
   background-color: $bg-white;
 
   img {
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0.6rem;
   }
 }
