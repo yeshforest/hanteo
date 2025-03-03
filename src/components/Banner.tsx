@@ -11,10 +11,15 @@ import defaultImg from "../../public/img_default.png";
 */
 const Banner = () => {
   const [mainBanners, setMainBanners] = useState<MainBannerType[]>([]);
+  const [isError, setIsError] = useState<boolean>(false); // 데이터 fetch 에러처리 변수
   useEffect(() => {
     // 배너 데이터 fetch
     fetchMainBanners().then((data) => {
-      setMainBanners(data);
+      if (data === null) {
+        setIsError(true);
+      } else {
+        setMainBanners(data);
+      }
     });
   }, []);
   return (
@@ -32,33 +37,34 @@ const Banner = () => {
           disableOnInteraction: false,
         }}
       >
-        {mainBanners.map((banner, index) => (
-          <SwiperSlide key={index}>
-            <a href="#" className="banner__item">
-              <div className="banner__img-wrapper">
-                <img
-                  src={banner.bannerImgUrl}
-                  onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
-                    e.currentTarget.src = defaultImg;
-                  }}
-                />
-              </div>
-              <div className="banner__details">
-                <span className="banner__content">
-                  <div className="banner__title">{banner.title}</div>
-                  {banner.actionTitle && (
-                    <button className="banner__action">
-                      {banner.actionTitle}
-                    </button>
+        {!isError &&
+          mainBanners.map((banner, index) => (
+            <SwiperSlide key={index}>
+              <a href="#" className="banner__item">
+                <div className="banner__img-wrapper">
+                  <img
+                    src={banner.bannerImgUrl}
+                    onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
+                      e.currentTarget.src = defaultImg;
+                    }}
+                  />
+                </div>
+                <div className="banner__details">
+                  <span className="banner__content">
+                    <div className="banner__title">{banner.title}</div>
+                    {banner.actionTitle && (
+                      <button className="banner__action">
+                        {banner.actionTitle}
+                      </button>
+                    )}
+                  </span>
+                  {banner.duration && (
+                    <div className="banner__duration">{banner.duration}</div>
                   )}
-                </span>
-                {banner.duration && (
-                  <div className="banner__duration">{banner.duration}</div>
-                )}
-              </div>
-            </a>
-          </SwiperSlide>
-        ))}
+                </div>
+              </a>
+            </SwiperSlide>
+          ))}
       </Swiper>
     </section>
   );

@@ -13,6 +13,7 @@ export const Chart = () => {
   const [musicChartRanking, setMusicChartRanking] = useState<
     ChartRankingType[]
   >([]);
+  const [isError, setIsError] = useState<boolean>(false); // 데이터 fetch 에러처리 변수
 
   // 무한 스크롤 구현 시 사용되는 변수 정의
   const [page, setPage] = useState<number>(1); // 현재 페이지
@@ -29,6 +30,9 @@ export const Chart = () => {
         setMusicChartRanking((prev) => [...prev, ...result.items]); // 가져온 데이터를 기존의 데이터와 합침
         setIsLastPage(!result.hasMore); // 데이터가 더 있는지 여부 저장
         setPage((prev) => prev + 1); // 페이지 증가
+      } else {
+        setIsError(true);
+        setIsLoading(false);
       }
     } catch (error) {
       console.error("Failed to load music chart:", error);
@@ -57,34 +61,38 @@ export const Chart = () => {
       <article className="chart">
         <h3 className="chart__title">Real-time Hanteo Chart</h3>
         <ol className="chart-list">
-          {musicChartRanking.map((music, index) => (
-            <li className="chart__item" key={index}>
-              <div className="chart__img-wrapper">
-                <img
-                  src={music.albumCoverUrl}
-                  onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
-                    e.currentTarget.src = defaultImg;
-                  }}
-                />
-              </div>
-              <span className="chart__item-content">
-                <div className="chart__rank-container">
-                  <div className="chart__rank">{index + 1}</div>
-                  <div className="chart__rank-change">
-                    {music.rankChange === RankTrend.DOWN
-                      ? "▼"
-                      : music.rankChange === RankTrend.UNCHANGED
-                      ? "–"
-                      : "▲"}
+          {isError ? (
+            <div>{`차트 정보를 불러오는데에 문제가 생겼습니다 :(`}</div>
+          ) : (
+            musicChartRanking.map((music, index) => (
+              <li className="chart__item" key={index}>
+                <div className="chart__img-wrapper">
+                  <img
+                    src={music.albumCoverUrl}
+                    onError={(e: SyntheticEvent<HTMLImageElement, Event>) => {
+                      e.currentTarget.src = defaultImg;
+                    }}
+                  />
+                </div>
+                <span className="chart__item-content">
+                  <div className="chart__rank-container">
+                    <div className="chart__rank">{index + 1}</div>
+                    <div className="chart__rank-change">
+                      {music.rankChange === RankTrend.DOWN
+                        ? "▼"
+                        : music.rankChange === RankTrend.UNCHANGED
+                        ? "–"
+                        : "▲"}
+                    </div>
                   </div>
-                </div>
-                <div className="chart__details">
-                  <div className="chart__detail-title">{music.title}</div>
-                  <div className="chart__detail-artist">{music.artist}</div>
-                </div>
-              </span>
-            </li>
-          ))}
+                  <div className="chart__details">
+                    <div className="chart__detail-title">{music.title}</div>
+                    <div className="chart__detail-artist">{music.artist}</div>
+                  </div>
+                </span>
+              </li>
+            ))
+          )}
         </ol>
       </article>
       <div ref={loaderRef} className="loader-element" />

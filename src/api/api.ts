@@ -6,7 +6,8 @@ export const fetchMainBanners = async () => {
     const { mainBanners } = await response.json();
     return mainBanners;
   } catch (e: unknown) {
-    console.error("mainbanner fetch error", e);
+    console.error("main banner fetch error", e);
+    return null;
   }
 };
 // 차트의 음악들을 가져오는 함수
