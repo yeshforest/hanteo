@@ -1,6 +1,8 @@
+@use "../abstracts/" as *;
+
 /* gnb 스타일 */
 .gnb-tab {
-  background-color: black;
+  background-color: $bg-gnb;
 
   &__list {
     display: flex;

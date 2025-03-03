@@ -1,5 +1,21 @@
-$primary: #fd5ba8;
-$secondary: #efb0d4;
+$primary: #fd5ba8; // 메인 색
+$secondary: #efb0d4; // 서브 색
 
+/* 폰트 색 정의 */
 $font-black: #060404;
 $font-gray: #8b8b8b;
+$font-white: #fffefe;
+
+/* 폰트 굵기 정의 */
+$font-weight-semibold: 600;
+
+/* 배경 색 정의 */
+$bg-gray: #f9f9f9;
+$bg-white: #f1f1f1;
+$bg-gnb: #000000;
+
+/* 로딩 색 정의 */
+$loading-black: #333;
+
+/* 그림자 색 정의 */
+$shadow-white: #eeeeee;

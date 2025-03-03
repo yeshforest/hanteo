@@ -8,7 +8,7 @@
   display: flex;
   width: 100%;
   min-height: 13.8rem;
-  background-color: #f1f1f1;
+  background-color: $bg-white;
 
   img {
     width: 100%;
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 0.8rem;
-  box-shadow: 2px 2px 2px 0.15rem #eeeeee;
+  box-shadow: 2px 2px 2px 0.15rem $shadow-white;
   height: 20rem;
   margin: 0.8rem;
 }
