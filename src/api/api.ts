@@ -2,7 +2,7 @@ import { ChartRankingType } from "../types/ChartRankingType";
 // 메인 배너의 데이터를 가져오는 함수
 export const fetchMainBanners = async () => {
   try {
-    const response = await fetch("src/data/mainBanner.json");
+    const response = await fetch("/data/mainBanner.json");
     const { mainBanners } = await response.json();
     return mainBanners;
   } catch (e: unknown) {
@@ -12,7 +12,7 @@ export const fetchMainBanners = async () => {
 // 차트의 음악들을 가져오는 함수
 export const fetchChartRanking = async () => {
   try {
-    const response = await fetch("src/data/chartRanking.json");
+    const response = await fetch("/data/chartRanking.json");
     const { musicChartRanking } = await response.json();
     return musicChartRanking;
   } catch (e: unknown) {
