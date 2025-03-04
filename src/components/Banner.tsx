@@ -36,6 +36,9 @@ const Banner = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        onTouchStart={(_, e: TouchEvent | MouseEvent | PointerEvent) => {
+          e.stopPropagation();
+        }}
       >
         {!isError &&
           mainBanners.map((banner, index) => (
