@@ -43,7 +43,11 @@ const Banner = () => {
         {!isError &&
           mainBanners.map((banner, index) => (
             <SwiperSlide key={index}>
-              <a href="#" className="banner__item">
+              <a
+                target={banner.actionUrl ? "_blank" : "_self"}
+                href={banner.actionUrl ?? "#"}
+                className="banner__item"
+              >
                 <div className="banner__img-wrapper">
                   <img
                     src={banner.bannerImgUrl}
