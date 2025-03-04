@@ -1,4 +1,4 @@
-import { GNBs } from "../data/Gnbs";
+import { gnbItems } from "../data/gnbItems";
 import { SwiperClass } from "swiper/react";
 import useDragScroll from "../hooks/useDragScroll";
 
@@ -30,7 +30,7 @@ const GnbTabMenu = ({ swiper, activeTabIndex, setActiveTabIndex }: Props) => {
           onMouseUp={onMouseUp}
           onMouseLeave={onMouseUp}
         >
-          {GNBs.map((gnbItems, itemIndex) => {
+          {gnbItems.map((gnbItems, itemIndex) => {
             const buttonClassName =
               activeTabIndex === gnbItems.id
                 ? "gnb-tab__button gnb-tab__button--active"

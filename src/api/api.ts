@@ -1,6 +1,7 @@
 import { ChartRankingType } from "../types/ChartRankingType";
+import { MainBannerType } from "../types/MainBannerType";
 // 메인 배너의 데이터를 가져오는 함수
-export const fetchMainBanners = async () => {
+export const fetchMainBanners = async (): Promise<MainBannerType[] | null> => {
   try {
     const response = await fetch("/data/mainBanner.json");
     const { mainBanners } = await response.json();
@@ -11,7 +12,9 @@ export const fetchMainBanners = async () => {
   }
 };
 // 차트의 음악들을 가져오는 함수
-export const fetchChartRanking = async () => {
+export const fetchChartRanking = async (): Promise<
+  ChartRankingType[] | null
+> => {
   try {
     const response = await fetch("/data/chartRanking.json");
     const { musicChartRanking } = await response.json();
@@ -35,16 +38,25 @@ export const fetchChartRankingPaging = async (
   size: number = 10
 ): Promise<FetchChartRankingType> => {
   const allChartRanking = await fetchChartRanking();
+
   return new Promise((resolve) => {
     setTimeout(() => {
-      const startIndex = (page - 1) * size;
-      const endIndex = startIndex + size;
+      if (allChartRanking) {
+        const startIndex = (page - 1) * size;
+        const endIndex = startIndex + size;
 
-      const slicedChartRanking = allChartRanking.slice(startIndex, endIndex);
+        const slicedChartRanking = allChartRanking.slice(startIndex, endIndex);
+        resolve({
+          items: slicedChartRanking,
+          hasMore: endIndex < allChartRanking.length,
+          total: allChartRanking.length,
+        });
+      }
+      // allChartRanking 데이터가 없는경우
       resolve({
-        items: slicedChartRanking,
-        hasMore: endIndex < allChartRanking.length,
-        total: allChartRanking.length,
+        items: [],
+        hasMore: false,
+        total: 0,
       });
     }, 500);
   });

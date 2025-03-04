@@ -1,7 +1,7 @@
 import Chart from "../components/Chart";
 import NotReady from "../components/NotReady";
 import { GnbType } from "../types/GnbType";
-export const GNBs: GnbType[] = [
+export const gnbItems: GnbType[] = [
   {
     id: 0,
     title: "차트",
