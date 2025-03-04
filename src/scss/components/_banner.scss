@@ -1,9 +1,12 @@
 @use "../abstracts/" as *;
 /* 배너 스타일 */
-.banner__swiper {
-  padding-bottom: 2.4rem;
 
-  &-img-wrapper {
+.banner {
+  &__swiper {
+    padding-bottom: 2.4rem;
+  }
+
+  &__img-wrapper {
     display: flex;
     width: 100%;
     min-height: 13.8rem;
@@ -18,11 +21,11 @@
     }
   }
 
-  &-__item {
+  &__item {
     display: flex;
     flex-direction: column;
     border-radius: 0.8rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.15rem $shadow-white;
+    box-shadow: 2px 2px 2px 0.15rem $shadow-white;
     height: 20rem;
     margin: 0.8rem;
   }
@@ -47,7 +50,6 @@
     overflow: hidden;
     white-space: nowrap;
   }
-
   &__action {
     border: 0.15rem solid $primary;
     border-radius: 5rem;
